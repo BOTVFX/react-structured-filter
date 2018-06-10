@@ -1,6 +1,6 @@
 var React = require('react');
 var _ = require('underscore');
-var Griddle = require('griddle-react');
+// var Griddle = require('griddle-react');
 
 var Loading = React.createClass({
   getDefaultProps: function(){
@@ -255,23 +255,24 @@ var GriddleWithCallback = React.createClass({
    *
    */
   render: function(){
-    return <Griddle {...this.props} useExternal={true} externalSetPage={this.setPage}
-      externalChangeSort={this.changeSort} externalSetFilter={this.setFilter}
-      externalSetPageSize={this.setPageSize} externalMaxPage={this.state.maxPage}
-      externalCurrentPage={this.state.page} results={this.state.results} tableClassName="table" resultsPerPage={this.state.pageSize}
-      externalSortColumn={this.state.sortColumn} externalSortAscending={this.state.sortAscending}
-      externalLoadingComponent={this.props.loadingComponent} externalIsLoading={this.state.isLoading}
+    return <div>Sorry :)</div>
+    // return <Griddle {...this.props} useExternal={true} externalSetPage={this.setPage}
+    //   externalChangeSort={this.changeSort} externalSetFilter={this.setFilter}
+    //   externalSetPageSize={this.setPageSize} externalMaxPage={this.state.maxPage}
+    //   externalCurrentPage={this.state.page} results={this.state.results} tableClassName="table" resultsPerPage={this.state.pageSize}
+    //   externalSortColumn={this.state.sortColumn} externalSortAscending={this.state.sortAscending}
+    //   externalLoadingComponent={this.props.loadingComponent} externalIsLoading={this.state.isLoading}
 
-      loadingComponent={Loading}
-      nextIconComponent={NextArrow}
-      previousIconComponent={PreviousArrow}
-      settingsIconComponent={SettingsIconComponent}
-      settingsText="Settings "
-      showSettings={true}
-      useGriddleStyles={false}
-      enableSort={true}
-      showFilter={false}
-      />
+    //   loadingComponent={Loading}
+    //   nextIconComponent={NextArrow}
+    //   previousIconComponent={PreviousArrow}
+    //   settingsIconComponent={SettingsIconComponent}
+    //   settingsText="Settings "
+    //   showSettings={true}
+    //   useGriddleStyles={false}
+    //   enableSort={true}
+    //   showFilter={false}
+    //   />
   }
 });
 

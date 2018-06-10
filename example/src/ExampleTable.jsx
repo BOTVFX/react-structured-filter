@@ -1,6 +1,6 @@
 var React = require('react');
-var Griddle = require('griddle-react');
-var GriddleWithCallback = require('./GriddleWithCallback');
+// var Griddle = require('griddle-react');
+// var GriddleWithCallback = require('./GriddleWithCallback');
 var StructuredFilter = require('../../src/main');
 
 require('../../src/react-structured-filter.css');
@@ -82,10 +82,10 @@ var ExampleTable = React.createClass({
           onChange={this.updateFilter}
           value={this.state.filter}
         />
-        <GriddleWithCallback
+        {/* <GriddleWithCallback
           getExternalResults={this.getJsonData} filter={JSON.stringify(this.state.filter)}
           resultsPerPage={10}
-        />
+        /> */}
       </div>
     )
   }
