@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-// var ExampleTable = require('./ExampleTable');
+var ExampleTable = require('./ExampleTable');
 
 require( './css/griddle.css' );
 
@@ -20,7 +20,7 @@ ReactDOM.render(
           <h3 className="panel-title">Example stock data</h3>
         </div>
         <div className="panel-body">
-          {/* <ExampleTable/> */}
+          <ExampleTable/>
           <hr/>
           <p><a href="https://github.com/joshcarr/react-structured-filter/blob/master/docs/index.md">Documentation</a></p>
 
